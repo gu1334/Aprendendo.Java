@@ -1,6 +1,6 @@
 # Aprendendo Java
 
-Este repositório documenta minha jornada de aprendizado em Java, iniciada com a ajuda do ChatGPT para estabelecer um plano de estudo estruturado.
+Este repositório documenta minha jornada de aprendizado em Java para estabelecer um plano de estudo estruturado.
 
 ## Semana 1: Fundamentos Básicos de Java
 
