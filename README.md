@@ -106,8 +106,72 @@ Este repositório documenta minha jornada de aprendizado em Java para estabelece
     System.out.println(nome3.equals(nome4)); // true
     ```
 
-### Dia 2:
-- Estruturas de controle: `if`, `else`, `switch`
+### Dia 2: Estruturas de Controle e Loops
+
+### Estruturas de Controle: if, else, switch
+
+O `if/else` em Java é uma estrutura de controle condicional utilizada para tomar decisões com base na avaliação de uma condição booleana.
+
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        String cor = "verde";
+
+        // Verifica se a variável 'cor' é igual a "verde"
+        if (cor.equals("verde")) {
+            System.out.println("Andar"); // Se verdadeiro, imprime "Andar"
+        } else {
+            System.out.println("Parar e aguardar"); // Se falso, imprime "Parar e aguardar"
+        }
+    }
+}
+```
+## Estrutura de Controle: switch
+
+A estrutura `switch` em Java é uma ferramenta para realizar múltiplas comparações de um valor com uma lista de casos. Comparado com o `if/else`, o `switch` pode tornar o código mais legível em situações específicas.
+
+### Exemplo de Uso do `switch` em Java
+
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        // Exemplo: Dia da semana
+        int dia = 3;
+        String nomeDia;
+
+        switch (dia) {
+            case 1:
+                nomeDia = "Domingo";
+                break;
+            case 2:
+                nomeDia = "Segunda-feira";
+                break;
+            case 3:
+                nomeDia = "Terça-feira";
+                break;
+            // Adicione outros casos conforme necessário
+            default:
+                nomeDia = "Dia inválido";
+                break;
+        }
+
+        System.out.println("Hoje é " + nomeDia);
+    }
+}
+```
+Neste exemplo:
+
+- A variável dia é avaliada uma vez.
+- Cada case representa um valor possível que a expressão (dia) pode ter.
+- Se o valor da expressão (dia) corresponder a um dos case, o bloco de código correspondente será executado.
+- A palavra-chave break é usada para sair do bloco de código do switch após a execução de um case.
+- O bloco default é opcional e será executado se nenhum dos case corresponder ao valor da expressão.
+O Este exemplo demonstra como usar a estrutura switch em Java para determinar o nome do dia da semana com base no valor da variável dia. Caso o valor de dia não corresponda a nenhum dos case, será atribuída a mensagem "Dia inválido" à variável nomeDia.
+
+A estrutura switch é especialmente útil quando você precisa realizar várias comparações em um valor único e específico.
+
 - Loops: `for`, `while`, `do-while`
 - Exercícios práticos
 
